@@ -49,7 +49,7 @@ function Obituary({ setShowObituary, obituaries,setObituaries }) {
     
       // Convert the canvas to a data URL and set it as the image URL
       const imageURL1 = canvas.toDataURL();
-      const res = await fetch("https://u2wqrpdlgitoamdsmo3lk2ky5i0taveu.lambda-url.ca-central-1.on.aws/", {
+      const res = await fetch("YOUR LAMBDA URL", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
