@@ -113,7 +113,7 @@ function Obituary({ setShowObituary, obituaries,setObituaries }) {
      <div className="obituary-create-cont">
        <div className="obituary-head">
          <h2 id="create-new-title">Create a New Obituary</h2>
-         <img id="obituary-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5rA95_uWy9bYBGw21EuNYM2whL0PgyZnlhpzqxwJQzlQO8ukLPCoAFIuTsIaBtZXRtT8&usqp=CAU" alt='flowers' />
+         <img id="obituary-img" src="LINK TO ENCRYPTION" alt='flowers' />
        </div>
        <div className="img-select-cont">
        <a href="#" id="img-select" onClick={() => {document.getElementById('file-input').click(); setImageError(false)}} style={{ color: imageError ? 'red' : 'initial' }}>
