@@ -44,7 +44,7 @@ def upload_and_generate_secure_url(image_bytes):
     signature = signature.hexdigest()
     Cloudpayload = {"api_key": api_key, "timestamp": timeStamp,"signature": signature}
     files = {'file': image_bytes}
-    ImageCloudResponse = requests.post("https://api.cloudinary.com/v1_1/dzpamqv6d/auto/upload", data=Cloudpayload, files=files)
+    ImageCloudResponse = requests.post("ADD UR PERSONAL CLOUDINARY LINK TO POST TO!!!!!!!", data=Cloudpayload, files=files)
     tempURL = ImageCloudResponse.json()["secure_url"]
     version = tempURL.split("/")[-2]
     FinalImageURL = f"{tempURL.split(version)[0].rstrip('/')}/e_art:zorro/{version}/{tempURL.split(version)[1]}"
@@ -63,7 +63,7 @@ def polly_func(desc):
     signature = signature.hexdigest()
     Cloudpayload = {"api_key": api_key, "timestamp": timeStamp,"signature": signature}
     files = {'file': response["AudioStream"]}
-    ImageCloudResponse = requests.post("https://api.cloudinary.com/v1_1/dzpamqv6d/auto/upload", data=Cloudpayload, files=files)
+    ImageCloudResponse = requests.post("ADD UR PERSONAL CLOUDINARY LINK TO POST TO!!!!!!!", data=Cloudpayload, files=files)
     pollyurl = ImageCloudResponse.json()["secure_url"]
     return pollyurl
 
