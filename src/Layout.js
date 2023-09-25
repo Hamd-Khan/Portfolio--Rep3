@@ -21,7 +21,7 @@ function Layout() {
 
 
   const getObituaries = () => {
-   fetch("https://qe2z6dkaw7jolwfibj26r5eoam0aolau.lambda-url.ca-central-1.on.aws/",{
+   fetch("YOUR LAMBDA FUNCTION",{
      method:"GET",
    })
      .then((response)=>{return response.json();})
